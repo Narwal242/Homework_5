@@ -79,12 +79,15 @@ public class GameScript : MonoBehaviour
     {
         scoreCounter++;
         //Update the Text 
+        liveText.text = "Score" + liveCounter;
+
     }
 
     //Creates a new ball
     public void SpawnBall()
     {
         //Create Ball
+        var spawn = Instantiate(ball, spawnPoint.position, Quaternion.identity);
     }
 
     //Sends the game back to the main menu scene 

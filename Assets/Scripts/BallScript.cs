@@ -28,6 +28,7 @@ public class BallScript : MonoBehaviour
         {
             gameScript.GoalUpdate();
             Destroy(gameObject);
+
         }
     }
 
